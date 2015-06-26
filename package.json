@@ -1,0 +1,33 @@
+{
+  "name": "gulp-task-directory",
+  "version": "0.0.1",
+  "description": "build gulp task according to directory structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoubin/gulp-task-directory.git"
+  },
+  "keywords": [
+    "gulp",
+    "task",
+    "directory"
+  ],
+  "author": "zoubin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoubin/gulp-task-directory/issues"
+  },
+  "homepage": "https://github.com/zoubin/gulp-task-directory#readme",
+  "dependencies": {
+    "arrayify-slice": "^1.0.0",
+    "glob": "^5.0.10"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "tape": "^4.0.0"
+  }
+}
