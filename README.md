@@ -1,5 +1,5 @@
 # gulp-task-directory
-build gulp task according to directory or object structure
+Create gulp task according to directory or object structure
 
 ## Usage
 
@@ -87,9 +87,9 @@ module.exports = function (gulp) {
 ### Contents of `default.js`
 
 * It returns an object rather than a task callback.
-* Each key-value specify a task.
-* Task `2` says it depedend on task `3` and `4`, but `4` is not specifed in this `default.js`, so it will be ignored, and the `dep` of task `2` will be `['3']`
-* You specify the dependency using keys of the returned object.
+* Each key-value specifies a task.
+* Task `2` says it depedends on task `3` and `4`, but `4` is not specifed in this `default.js`, so it will be ignored, and the `dep` of task `2` will be `['3']`
+* Dependencies are specified using keys of the returned object.
 
 
 ```javascript
@@ -120,6 +120,6 @@ function dummy(done) {
 
 ## taskDir(dir, gulp, xarg1, xarg2,...)
 
-* `dir`. All `default.js` files in `dir` will be treated as a task creator, which should return either a callback, or an object specifying gulp tasks through key-value.
+* `dir`. Each `default.js` in `dir` will be treated as a task creator, which should return either a callback, or an object specifying gulp tasks through key-value.
 * `gulp`. The `gulp` instance
-* `xarg1,xarg2,...`. All creator function will be called using `gulp, xarg1, xarg2, ...`.
+* `xarg1,xarg2,...`. All creator functions will be called using `gulp, xarg1, xarg2, ...`.
