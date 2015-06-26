@@ -1,6 +1,6 @@
 {
   "name": "gulp-task-directory",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "build gulp task according to directory structure",
   "main": "index.js",
   "scripts": {
